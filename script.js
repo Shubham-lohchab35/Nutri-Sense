@@ -1,5 +1,8 @@
-const appId = "58b21cd6";
-const appKey = "19d61a8074f64b75148780fdeaaef55e";
+require('dotenv').config();
+
+const appId = process.env.APP_ID;
+const appKey = process.env.APP_KEY;
+
 
 function updateLevels() {
   const disease = document.getElementById("diseaseInput").value;

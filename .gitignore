@@ -1,9 +1,11 @@
-# Never push secret keys
+# Secrets
 .env
 
-# Optional: common ignored folders/files
+# Build or dependency folders
 node_modules/
-.DS_Store
 dist/
-*.log
 functions/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
