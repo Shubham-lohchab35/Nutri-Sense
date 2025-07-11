@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Is This Food Healthy?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍎 Is This Food Healthy?</h1>
+
+  <input type="text" id="foodInput" placeholder="Enter food (e.g., masala dosa)"><br><br>
+
+  <input type="number" id="amountValue" placeholder="Amount" style="width: 100px;">
+  <select id="amountUnit">
+    <option value="cup">cup</option>
+    <option value="grams">grams</option>
+    <option value="piece">piece</option>
+    <option value="tablespoon">tablespoon</option>
+    <option value="teaspoon">teaspoon</option>
+  </select><br><br>
+
+  <select id="diseaseInput" onchange="updateLevels()">
+    <option value="">No specific condition</option>
+    <option value="liver">Liver Condition</option>
+    <option value="diabetes">Diabetes</option>
+    <option value="weight loss">Weight Loss</option>
+  </select>
+
+  <select id="conditionLevel" style="display:none;"></select><br><br>
+
+  <button onclick="checkFood()">Check</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+  <div id="signature">Made By <strong>Shubham Lohchab</strong></div>
+</body>
+</html>
+
+
